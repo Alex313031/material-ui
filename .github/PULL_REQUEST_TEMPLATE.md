@@ -1,3 +1,6 @@
-<!-- Thanks so much for your PR, your contribution is appreciated! ❤️ -->
+<!-- Thanks so much for your PR, your contribution is appreciated! -->
 
-- [ ] I have followed (at least) the [PR section of the contributing guide](https://github.com/mui/material-ui/blob/HEAD/CONTRIBUTING.md#sending-a-pull-request).
+- [ ] PR has tests / docs demo, and is linted.
+- [ ] Commit and PR titles begin with [ComponentName], and are in imperative form: "[Component] Fix leaky abstraction".
+- [ ] Description explains the issue / use-case resolved, and auto-closes the related issue(s) (http://tr.im/vFqem).
+

@@ -1,180 +1,167 @@
-<!-- markdownlint-disable-next-line -->
-<p align="center">
-  <a href="https://mui.com/core/" rel="noopener" target="_blank"><img width="150" height="133" src="https://mui.com/static/logo.svg" alt="MUI Core logo"></a>
-</p>
+#### Note
 
-<h1 align="center">MUI Core</h1>
+For *how-to* questions and other non-issues,
+please use [StackOverflow](http://stackoverflow.com/questions/tagged/material-ui)
+instead of Github issues. There is a StackOverflow tag called "material-ui"
+that you can use to tag your questions.
 
-**MUI Core** contains foundational React UI component libraries for shipping new features faster:
+# [Material-UI](http://www.material-ui.com/)
 
-- [Material UI](https://mui.com/material-ui/) is a comprehensive library of components that features our implementation of Google's [Material Design](https://m2.material.io/design/introduction/) system.
+[![npm package](https://img.shields.io/npm/v/material-ui.svg?style=flat-square)](https://www.npmjs.org/package/material-ui)
+[![Build Status](https://travis-ci.org/callemall/material-ui.svg?branch=master)](https://travis-ci.org/callemall/material-ui)
+[![Gitter](https://img.shields.io/badge/gitter-join%20chat-f81a65.svg?style=flat-square)](https://gitter.im/callemall/material-ui?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Coverage Status](https://coveralls.io/repos/github/callemall/material-ui/badge.svg?branch=master)](https://coveralls.io/github/callemall/material-ui?branch=master)
 
-- [Joy UI](https://mui.com/joy-ui/getting-started/) is a library of beautifully designed React UI components built to spark joy.
+[![PeerDependencies](https://img.shields.io/david/peer/callemall/material-ui.svg?style=flat-square)](https://david-dm.org/callemall/material-ui#info=peerDependencies&view=list)
+[![Dependencies](https://img.shields.io/david/callemall/material-ui.svg?style=flat-square)](https://david-dm.org/callemall/material-ui)
+[![DevDependencies](https://img.shields.io/david/dev/callemall/material-ui.svg?style=flat-square)](https://david-dm.org/callemall/material-ui#info=devDependencies&view=list)
 
-- [Base UI](https://mui.com/base-ui/) is a library of unstyled React UI components and hooks. With Base UI, you gain complete control over your app's CSS and accessibility features.
+Material-UI is a set of [React](http://facebook.github.io/react/) components that implement
+[Google's Material Design](https://www.google.com/design/spec/material-design/introduction.html)
+specification.
 
-- [MUI System](https://mui.com/system/getting-started/) is a collection of CSS utilities to help you rapidly lay out custom designs.
+Check out our [documentation site](http://www.material-ui.com/) for live examples.
+It's still a work in progress, but hopefully you can see where we're headed.
 
-<div align="center">
+**Recently Updated?** Please read the [changelog](https://github.com/callemall/material-ui/releases), this README and the documentation before posting an issue.
 
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mui/material-ui/blob/HEAD/LICENSE)
-[![npm latest package](https://img.shields.io/npm/v/@mui/material/latest.svg)](https://www.npmjs.com/package/@mui/material)
-[![npm next package](https://img.shields.io/npm/v/@mui/material/next.svg)](https://www.npmjs.com/package/@mui/material)
-[![npm downloads](https://img.shields.io/npm/dm/@mui/material.svg)](https://www.npmjs.com/package/@mui/material)
-[![CircleCI](https://circleci.com/gh/mui/material-ui/tree/master.svg?style=shield)](https://app.circleci.com/pipelines/github/mui/material-ui?branch=master)
-[![Coverage Status](https://img.shields.io/codecov/c/github/mui/material-ui/master.svg)](https://codecov.io/gh/mui/material-ui/branch/master)
-[![Follow on X](https://img.shields.io/twitter/follow/MUI_hq.svg?label=follow+MUI)](https://twitter.com/MUI_hq)
-[![Renovate status](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://github.com/mui/material-ui/issues/27062)
-[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/mui/material-ui.svg)](https://isitmaintained.com/project/mui/material-ui 'Average time to resolve an issue')
-[![Open Collective backers and sponsors](https://img.shields.io/opencollective/all/mui-org)](https://opencollective.com/mui-org)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1320/badge)](https://bestpractices.coreinfrastructure.org/projects/1320)
+## Required Knowledge
 
-</div>
+We recommend that you get to know [React](http://facebook.github.io/react/)
+before diving into material-ui. Material-UI is a set of React components,
+so understanding how React fits into web development is important.
 
-## Documentation
+(If you're not familiar with Node, or with the concept of Single Page Applications (SPAs),
+head over to the [documentation website](http://material-ui.com/#/get-started/required-knowledge)
+for a quick introduction before you read on.)
 
-### Material UI
+## Installation
 
-Visit [https://mui.com/material-ui/](https://mui.com/material-ui/) to view the full documentation.
+Material-UI is available as an [npm package](https://www.npmjs.org/package/material-ui).
 
-<details>
-  <summary>Older versions</summary>
+**Stable channel**
+```sh
+npm install material-ui
+```
 
-- **[v4.x](https://v4.mui.com/)** ([Migration from v4 to v5](https://mui.com/material-ui/migration/migration-v4/))
-- **[v3.x](https://v3.mui.com/)** ([Migration from v3 to v4](https://mui.com/material-ui/migration/migration-v3/))
-- **[v0.x](https://v0.mui.com/)** ([Migration to v1](https://mui.com/material-ui/migration/migration-v0x/))
+**Pre-release channel**
+```sh
+npm install material-ui@next
+```
 
-</details>
+Please note that `@next` will only point to pre-releases; to get the latest stable release use `@latest` instead.
 
-**Note:** `@next` only points to pre-releases.
-Use `@latest` for the latest stable release.
 
-### Joy UI
+### React-Tap-Event-Plugin
 
-Visit [https://mui.com/joy-ui/getting-started/](https://mui.com/joy-ui/getting-started/) to view the full documentation.
+(not needed for versions 0.19.0 and higher)
 
-**Note**: Joy UI is still in beta.
-We are adding new components regularly and you're welcome to contribute!
+Some components use
+[react-tap-event-plugin](https://github.com/zilverline/react-tap-event-plugin) to
+listen for touch events because onClick is not fast enough
+_This dependency is temporary and will eventually go away._ Until then,
+be sure to inject this plugin at the start of your app.
 
-### Base UI
+```js
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
-Visit [https://mui.com/base-ui/](https://mui.com/base-ui/) to view the full documentation.
+// Needed for onTouchTap
+// http://stackoverflow.com/a/34015469/988941
+injectTapEventPlugin();
+```
 
-**Note**: Base UI is still in beta.
-We are adding new components regularly and you're welcome to contribute!
+### Roboto Font
 
-### MUI System
+Material-UI was designed with the [Roboto](http://www.google.com/fonts/specimen/Roboto)
+font in mind. So be sure to include it in your project. Here are
+[some instructions](http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,500)
+on how to do so.
 
-Visit [https://mui.com/system/getting-started/](https://mui.com/system/getting-started/) to view the full documentation.
+## Usage
 
-## Sponsors
+Beginning with v0.15.0, Material-UI components require a theme to be provided. The quickest way to get up and running is by using the `MuiThemeProvider` to inject the theme into your application context. Following that, you can use any of the components as demonstrated in the documentation.
 
-### Diamond 💎
+Here is a quick example to get you started:
 
-<p>
-  <a href="https://octopus.com/?utm_source=MUI&utm_medium=referral&utm_content=readme" rel="noopener sponsored" target="_blank"><img height="128" width="128" src="https://i.ibb.co/w0HF0Nz/Logo-Blue-140px-rgb.png" alt="octopus" title="Repeatable, reliable deployments" loading="lazy" /></a>
-  <a href="https://www.doit.com/flexsave/?utm_source=MUI&utm_medium=referral&utm_content=readme" rel="noopener sponsored" target="_blank"><img height="128" width="128" src="https://avatars.githubusercontent.com/u/8424863?s=256" alt="doit" title="Management Platform for Google Cloud and AWS" loading="lazy" /></a>
-</p>
+**./App.js**
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MyAwesomeReactComponent from './MyAwesomeReactComponent';
 
-Diamond sponsors are those who have pledged \$1,500/month or more to MUI.
+const App = () => (
+  <MuiThemeProvider>
+    <MyAwesomeReactComponent />
+  </MuiThemeProvider>
+);
 
-### Gold 🏆
+ReactDOM.render(
+  <App />,
+  document.getElementById('app')
+);
+```
 
-via [Open Collective](https://opencollective.com/mui-org) or via [Patreon](https://www.patreon.com/oliviertassinari)
+**./MyAwesomeReactComponent.js**
+```jsx
+import React from 'react';
+import RaisedButton from 'material-ui/RaisedButton';
 
-<p>
-  <a href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=homepage" rel="noopener sponsored" target="_blank"><img height="96" width="96" src="https://avatars.githubusercontent.com/u/30204434?s=192" alt="tidelift.com" title="Tidelift: Enterprise-ready open-source software." loading="lazy" /></a>
-  <a href="https://open.spotify.com/?utm_source=MUI&utm_medium=referral&utm_content=readme" rel="noopener sponsored" target="_blank"><img height="96" width="96" src="https://images.opencollective.com/spotify/f37ea28/logo/192.png" alt="Spotify" title="Spotify: Music service for accessing millions of songs." loading="lazy" /></a>
-  <a href="https://icons8.com?utm_source=MUI&utm_medium=referral&utm_content=readme" rel="noopener sponsored" target="_blank"><img height="96" width="96" src="https://images.opencollective.com/icons8/7fa1641/logo/192.png" alt="Icons8" title="Icons8: API for icons, photos, illustrations, and music." loading="lazy"></a>
-  <a href="https://rxdb.info/?utm_source=sponsor&utm_medium=opencollective&utm_campaign=opencollective-mui" rel="noopener sponsored" target="_blank"><img height="96" width="96" src="https://rxdb.info/files/logo/logo_text.svg" alt="RxDB" title="RxDB: Local-first JavaScript database." loading="lazy" /></a>
-  <a href="https://www.text-em-all.com/?utm_source=MUI&utm_medium=referral&utm_content=readme" rel="noopener sponsored" target="_blank"><img src="https://avatars.githubusercontent.com/u/1262264?s=192" alt="text-em-all.com" title="Text-em-all: Mass text messaging and automated calling." height="96" width="96" loading="lazy"></a>
-  <a href="https://megafamous.com/?utm_source=MUI&utm_medium=referral&utm_content=readme" rel="noopener sponsored" target="_blank"><img height="96" width="96" src="https://mui.com/static/sponsors/megafamous.png" alt="megafamous.com" title="MegaFamous: Buy Instagram followers and likes." loading="lazy" /></a>
-  <a href="https://www.dialmycalls.com/?utm_source=MUI&utm_medium=referral&utm_content=readme" rel="noopener sponsored" target="_blank"><img height="96" width="96" src="https://images.opencollective.com/dialmycalls/f5ae9ab/avatar/192.png" alt="dialmycalls.com" title="DialMyCalls: Send text messages, calls, and emails." loading="lazy" /></a>
-  <a href="https://goread.io/?utm_source=MUI&utm_medium=referral&utm_content=readme" rel="noopener sponsored" target="_blank"><img height="96" width="96" src="https://images.opencollective.com/goread_io/eb6337d/logo/192.png" alt="goread.io" title="Goread.io: Instagram followers, likes, views, and comments." loading="lazy" /></a>
-</p>
+const MyAwesomeReactComponent = () => (
+  <RaisedButton label="Default" />
+);
 
-Gold sponsors are those who have pledged \$500/month or more to MUI.
+export default MyAwesomeReactComponent;
+```
 
-### More backers
+Please refer to each component's documentation page to see how they should be imported.
 
-See the full list of [our backers](https://mui.com/material-ui/discover-more/backers/).
+## Customization
 
-## Questions
+We have implemented a default theme to render all Material-UI components.
+Styling components to your liking is simple and hassle-free. This can be
+achieved in the following two ways:
 
-For how-to questions that don't involve making changes to the code base, please use [Stack Overflow](https://stackoverflow.com/questions/) instead of GitHub issues.
+* [Use a custom theme to style components](http://material-ui.com/#/customization/themes)
+* [Override individual component styles via the `style` prop](http://www.material-ui.com/#/customization/styles)
 
 ## Examples
 
-Our documentation features [a collection of example projects](https://github.com/mui/material-ui/tree/master/examples).
+There are 2 projects that you can look at to get started. They can be found in the
+[examples folder](https://github.com/callemall/material-ui/tree/master/examples).
+These projects are basic examples that show how to consume material-ui components
+in your own project. The first project uses [browserify](http://browserify.org/)
+for module bundling and [gulp](http://gulpjs.com/) for JS task automation,
+while the second project uses [webpack](http://webpack.github.io/) for module bundling and building.
 
-## Premium templates
-
-You can find complete templates and themes in the [MUI Store](https://mui.com/store/?utm_source=docs&utm_medium=referral&utm_campaign=readme-store).
-
-## Contributing
-
-Read the [contributing guide](/CONTRIBUTING.md) to learn about our development process, how to propose bug fixes and improvements, and how to build and test your changes.
-
-Contributing is about more than just issues and pull requests!
-There are many other ways to [support MUI](https://mui.com/material-ui/getting-started/faq/#mui-is-awesome-how-can-i-support-the-project) beyond contributing to the code base.
-
-## Changelog
-
-The [changelog](https://github.com/mui/material-ui/releases) is regularly updated to reflect what's changed in each new release.
+The source code for this documentation site is also included in the repository.
+This is a slightly more complex project that also uses webpack, and contains
+examples of every material-ui component. Check out the
+[docs folder](https://github.com/callemall/material-ui/tree/master/docs)
+for build instructions.
 
 ## Roadmap
 
-Future plans and high-priority features and enhancements can be found in our [roadmap](https://mui.com/material-ui/discover-more/roadmap/).
+The future plans and high priority features and enhancements can be found
+in the [ROADMAP.md](https://github.com/mui-org/material-ui/blob/v0.x/ROADMAP.md) file.
+
+## Contribute
+
+[Material-UI](http://www.material-ui.com/) came about from our love of
+[React](http://facebook.github.io/react/) and
+[Google's Material Design](https://www.google.com/design/spec/material-design/introduction.html).
+We're currently using it on a project at [Call-Em-All](https://www.call-em-all.com/Careers)
+and plan on adding to it and making it better. If you'd like to help,
+check out the [docs folder](https://github.com/callemall/material-ui/tree/master/docs).
+We'd greatly appreciate any [contribution](https://github.com/mui-org/material-ui/blob/v0.x/CONTRIBUTING.md)
+you make. :)
+
+## Thanks
+
+[<img src="https://www.browserstack.com/images/mail/browserstack-logo-footer.png" width="120">](https://www.browserstack.com/)
+
+Thank you to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test `material-ui` in real browsers.
 
 ## License
-
 This project is licensed under the terms of the
-[MIT license](/LICENSE).
-
-## Security
-
-For details of supported versions and contact details for reporting security issues, please refer to the [security policy](https://github.com/mui/material-ui/security/policy).
-
-## Sponsoring services
-
-These great services sponsor MUI's core infrastructure:
-
-<div>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://mui.com/static/readme/github-darkmode.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://mui.com/static/readme/github-lightmode.svg">
-  <img alt="GitHub logo" src="https://mui.com/static/readme/github-lightmode.svg" width="80" height="43">
-</picture>
-
-[GitHub](https://github.com/) lets us host the Git repository and coordinate contributions.
-
-</div>
-
-<div>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://mui.com/static/readme/netlify-darkmode.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://mui.com/static/readme/netlify-lightmode.svg">
-  <img alt="Netlify logo" src="https://mui.com/static/readme/netlify-lightmode.svg" width="100" height="27">
-</picture>
-
-[Netlify](https://www.netlify.com/) lets us distribute the documentation.
-
-</div>
-
-<div>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://mui.com/static/readme/browserstack-darkmode.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://mui.com/static/readme/browserstack-lightmode.svg">
-  <img alt="BrowserStack logo" src="https://mui.com/static/readme/browserstack-lightmode.svg" width="140" height="25">
-</picture>
-
-[BrowserStack](https://www.browserstack.com/) lets us test in real browsers.
-
-</div>
-
-<div>
-<img loading="lazy" alt="CodeCov logo" src="https://avatars.githubusercontent.com/u/8226205?s=70" width="35" height="35">
-
-[CodeCov](https://about.codecov.io/) lets us monitor test coverage.
-
-</div>
+[MIT license](https://github.com/mui-org/material-ui/blob/v0.x/LICENSE)

@@ -1,0 +1,4 @@
+[submodule "examples/razzle-styled-example"]
+	path = examples/razzle-styled-example
+	url = https://github.com/kireerik/razzle-material-ui-styled-example.git
+	branch = master
